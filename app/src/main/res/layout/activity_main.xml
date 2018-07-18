@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@drawable/back"
+    tools:context="com.example.a11417.bill.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:weightSum="1">
+
+        <TextView
+            android:text="简单记账"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:textSize="75px"
+            android:textStyle="bold"
+            android:id="@+id/Caption"
+            android:layout_weight="0.02" />
+
+        <TextView
+            android:text="收入纪录"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:clickable="true"
+            android:textSize="100px"
+            android:textStyle="bold"
+            android:id="@+id/In"
+            android:layout_weight="0.02" />
+        <TextView
+            android:text="支出纪录"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:textSize="100px"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:id="@+id/Out"
+            android:layout_weight="0.02" />
+        <TextView
+            android:text="本月收支统计"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:textSize="100px"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:id="@+id/Read"
+            android:layout_weight="0.02" />
+        <TextView
+            android:text="查看条目"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:textSize="100px"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:id="@+id/See"
+            android:layout_weight="0.02" />
+    </LinearLayout>
+</RelativeLayout>

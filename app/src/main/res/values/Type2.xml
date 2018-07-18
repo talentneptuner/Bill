@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="type2">
+        <item>父母生活费</item>
+        <item>兼职工资</item>
+        <item>奖学金</item>
+        <item>理财所得</item>
+        <item>杂项收入</item>
+    </string-array>
+</resources>

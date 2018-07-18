@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@drawable/back"
+    tools:context="com.example.a11417.bill.In">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="   收入金额: "
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入收入金额"
+                android:id="@+id/income"
+                android:inputType="numberDecimal"
+
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="   时间: "
+                android:layout_width="300px"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:text="选择日期"
+                android:ems="10"
+                android:id="@+id/editText3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="   事项: "
+                android:layout_width="wrap_content"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intype"
+                android:entries="@array/type2"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="   备注: "
+                android:layout_width="wrap_content"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="备注信息"
+                android:selectAllOnFocus="true"
+                android:id="@+id/add"
+                />
+        </TableRow>
+            <Button
+                android:layout_gravity="center"
+                android:text="清空"
+                android:id="@+id/clear"
+                android:background="@color/lightcyan"/>
+            <Button
+                android:layout_marginTop="5px"
+                android:layout_gravity="center"
+                android:text="确认"
+                android:id="@+id/addin"
+                android:background="@color/lightcyan"/>
+    </TableLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type1">
+        <item>三餐消费</item>
+        <item>零食消费</item>
+        <item>衣服消费</item>
+        <item>游玩消费</item>
+        <item>学习花费</item>
+        <item>通信花费</item>
+        <item>杂项消费</item>
+    </string-array>
+
+</resources>
